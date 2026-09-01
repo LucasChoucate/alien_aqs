@@ -5,6 +5,7 @@ from settings import Settings
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
+from fast_alien import FastAlien
 
 from game_event_handler import GameEventHandler
 from bullet_manager import BulletManager    
@@ -45,7 +46,8 @@ class AlienInvasion:
         self.fleet_manager = FleetManager(
             self.screen,
             self.settings,
-            self.ship
+            self.ship,
+            FastAlien
         )
 
         self.event_handler = GameEventHandler(
