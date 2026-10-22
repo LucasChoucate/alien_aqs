@@ -76,5 +76,5 @@ def main():
     print("Total Pedido Normal:", pedido_normal.total(valor))
     print("Total Pedido VIP:", pedido_vip.total(valor))
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()
